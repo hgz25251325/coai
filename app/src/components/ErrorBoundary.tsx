@@ -68,4 +68,11 @@ class ErrorBoundary extends React.Component<
   }
 }
 
-export default withTranslation()(ErrorBoundary);
+
+//export default withTranslation()(ErrorBoundary);
+// 显式指定类型注解
+// 使用类型断言
+const ErrorBoundaryWithTranslation = withTranslation()(ErrorBoundary) as React.FC<ErrorBoundaryProps>;
+//const ErrorBoundaryWithTranslation: React.FC<ErrorBoundaryProps> = withTranslation()(ErrorBoundary);
+
+export default ErrorBoundaryWithTranslation;

@@ -6,10 +6,10 @@ import {
 } from "@/components/ui/card.tsx";
 import { useTranslation } from "react-i18next";
 import { useMemo, useReducer, useState } from "react";
+import type { PlanConfig } from "@/admin/api/plan.ts";
 import {
   getExternalPlanConfig,
-  getPlanConfig,
-  PlanConfig,
+  getPlanConfig,  
   setPlanConfig,
 } from "@/admin/api/plan.ts";
 import { useEffectAsync } from "@/utils/hook.ts";

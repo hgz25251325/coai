@@ -22,11 +22,9 @@
     "paths": {
       "@/*": ["./src/*"],
     }
-  },
-  "include": [
-    "src",
-    "*.ts",
-  ],
+  }, 
+  "include": ["src", "vite-env.d.ts"],
+  "exclude": ["vite.config.ts"],
   "baseUrl": ".",
   "references": [{ "path": "./tsconfig.node.json" }],
 }
